@@ -13,7 +13,7 @@ RUN LATEST_VERSION=$(wget -qO- https://api.github.com/repos/freyacodes/Lavalink/
     wget https://github.com/freyacodes/Lavalink/releases/download/${LATEST_VERSION}/Lavalink.jar
 
 # Copy the application.yml configuration file into the container
-COPY application.yml /app
+COPY LavalinkServer/application.yml /app
 
 # Expose the port (for documentation purposes)
 EXPOSE 2333
